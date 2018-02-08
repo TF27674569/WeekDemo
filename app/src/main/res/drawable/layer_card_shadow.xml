@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <!-- Shadow -->
+            <item android:top="1dp">
+                <layer-list>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#034666ee" />
+                            <padding android:bottom="0.5dp" android:left="1dp" android:right="1dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#014666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#014666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#024666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#030033c6" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#064666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#054666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#024666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#014666ee" />
+                            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0dp" />
+                        </shape>
+                    </item>
+                    <item>
+                        <shape android:shape="rectangle">
+                            <corners android:radius="@dimen/card_radius_normal" />
+                            <solid android:color="#004666ee" />
+                            <padding android:bottom="0.5dp" android:left="0dp" android:right="0dp" android:top="1dp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/card_radius_normal" />
+                    <solid android:color="#fff" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

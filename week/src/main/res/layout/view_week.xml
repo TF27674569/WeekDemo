@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- week title-->
+    <LinearLayout
+        android:id="@+id/weekTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="日"
+            android:textColor="#ccc"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="一"
+            android:gravity="center"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="二"
+            android:gravity="center"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="三"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="四"
+            android:textColor="#666"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="五"
+            android:textColor="#666"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="六"
+            android:gravity="center"
+            android:textColor="#6666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--  周日历显示 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/weekPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
