@@ -16,12 +16,14 @@ import org.api.ViewUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.weekdemo.R.id.weekLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     @ViewById(R.id.weekView)
     public WeekView weekView;
-    @ViewById(R.id.weekLayout)
-    public WeekCalendar weekLayout;
+    @ViewById(weekLayout)
+    public WeekCalendar weekCalendar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,22 +32,13 @@ public class MainActivity extends AppCompatActivity {
         ViewUtils.bind(this);
         List<Calendar> calendars = new ArrayList<>();
 
-        for (int i = 1; i < 8; i++) {
-
-            Calendar calendar = new Calendar();
-            calendar.setDay(i);
-            if (i == 2) {
-                calendar.setCurrentDay(true);
-            }
-            calendars.add(calendar);
-
-        }
         weekView.setCalendars(calendars);
 
-        weekLayout.setScheme(getScheme());
+        weekCalendar.setRange(2018,2,6,2018,2,25);
+        weekCalendar.setScheme(getScheme());
 
-        weekLayout.scrollCurrentDay();
-        weekLayout.addOnWeekChangeListener(new OnWeekChangeListener() {
+        weekCalendar.scrollCurrentDay();
+        weekCalendar.addOnWeekChangeListener(new OnWeekChangeListener() {
             @Override
             public void onWeekChangeListener(Calendar calendar) {
                 Toast.makeText(MainActivity.this, calendar.toString(), Toast.LENGTH_SHORT).show();

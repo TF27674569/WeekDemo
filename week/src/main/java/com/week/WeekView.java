@@ -141,8 +141,8 @@ public class WeekView extends View implements View.OnClickListener {
             case MotionEvent.ACTION_MOVE:
                 float mDY;
                 if (isClick) {
-                    mX = event.getY() - mX;
-                    isClick = Math.abs(mX) <= 50;
+                    mDY = event.getY() - mY;
+                    isClick = Math.abs(mDY) <= 50;
                 }
                 break;
             case MotionEvent.ACTION_UP:
