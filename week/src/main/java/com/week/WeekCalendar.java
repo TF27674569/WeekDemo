@@ -87,8 +87,10 @@ public class WeekCalendar extends LinearLayout {
         mWeekPager = (ViewPager) findViewById(R.id.weekPager);
         mWeekPager.setAdapter(new WeekViewPagerAdapter());
 
+        java.util.Calendar calendar = java.util.Calendar.getInstance();
+
         // 默认数据
-        setRange(2017, 6, 30, 2019, 6, 30);
+        setRange(calendar.get(java.util.Calendar.YEAR), calendar.get(java.util.Calendar.MONTH), 1, calendar.get(java.util.Calendar.YEAR), calendar.get(java.util.Calendar.MONTH) + 2, 1);
 
         // 监听动作
         mWeekPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
